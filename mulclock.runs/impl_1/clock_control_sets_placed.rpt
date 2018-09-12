@@ -1,0 +1,102 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Mon Sep  3 15:17:49 2018
+| Host         : DESKTOP-IBRURNH running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file clock_control_sets_placed.rpt
+| Design       : clock
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    35 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             105 |           30 |
+| Yes          | No                    | No                     |             149 |           73 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              55 |           25 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+-----------------------------+--------------------------------+------------------+----------------+
+|    Clock Signal    |        Enable Signal        |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------+-----------------------------+--------------------------------+------------------+----------------+
+|  clk_2Hz_BUFG      |                             | u1/SR[0]                       |                1 |              1 |
+|  clk_1Hz_BUFG      |                             |                                |                2 |              2 |
+|  iclk_IBUF_BUFG    |                             |                                |                3 |              3 |
+|  clk_2Hz_BUFG      | s_M1[5]_i_1_n_0             |                                |                3 |              5 |
+|  clk_2Hz_BUFG      | down_count[6]_i_2_n_0       | down_count                     |                2 |              7 |
+|  clk_1Hz_BUFG      |                             | u1/SR[0]                       |                5 |              8 |
+|  clk_1Hz_BUFG      | u1/w/m_month_reg[0][0]      | u1/SR[0]                       |                4 |              8 |
+|  clk_1Hz_BUFG      | u1/w/E[0]                   | u1/SR[0]                       |                3 |              8 |
+|  clk_1Hz_BUFG      | u1/m_day[7]_i_1_n_0         | u1/SR[0]                       |                5 |              8 |
+|  clk_1Hz_BUFG      | u1/m_M[7]_i_1_n_0           | u1/SR[0]                       |                5 |              8 |
+|  clk_1Hz_BUFG      | u1/m_H[7]_i_1_n_0           | u1/SR[0]                       |                4 |              8 |
+|  clk_2Hz_BUFG      | key2_IBUF                   | state_c                        |                2 |              8 |
+|  clk_2Hz_BUFG      | s_H1[7]_i_1_n_0             |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_H2[7]_i_1_n_0             |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_H[7]_i_1_n_0              |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_H3[7]_i_1_n_0             |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_M4[7]_i_1_n_0             |                                |                5 |              8 |
+|  clk_2Hz_BUFG      | s_M3[7]_i_1_n_0             |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_M2[7]_i_1_n_0             |                                |                3 |              8 |
+|  clk_2Hz_BUFG      | s_day[7]_i_1_n_0            |                                |                5 |              8 |
+|  clk_2Hz_BUFG      | s_S[7]_i_1_n_0              |                                |                5 |              8 |
+|  clk_2Hz_BUFG      | s_S4[7]_i_1_n_0             |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | s_M[7]_i_1_n_0              |                                |                3 |              8 |
+|  clk_2Hz_BUFG      | s_year[7]_i_1_n_0           |                                |                5 |              8 |
+|  clk_2Hz_BUFG      | s_month[7]_i_1_n_0          |                                |                3 |              8 |
+|  clk_2Hz_BUFG      | u1/alarm_count1_reg[4]_0[0] |                                |                2 |              8 |
+|  clk_2Hz_BUFG      | u1/alarm_count2_reg[4]_0[0] |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | M_down[7]_i_1_n_0           |                                |                4 |              8 |
+|  clk_2Hz_BUFG      | S_down[7]_i_1_n_0           |                                |                3 |              8 |
+|  clk_2Hz_BUFG      | u1/E[0]                     |                                |                4 |              8 |
+|  clk_2Hz_BUFG      |                             |                                |               11 |             13 |
+|  nclk1000/Q_reg[2] |                             |                                |               12 |             18 |
+|  iclk_IBUF_BUFG    |                             | nclk1/count_p[0]_i_1__1_n_0    |                8 |             32 |
+|  iclk_IBUF_BUFG    |                             | nclk2/clear                    |                8 |             32 |
+|  iclk_IBUF_BUFG    |                             | nclk1000/count_p[0]_i_1__0_n_0 |                8 |             32 |
++--------------------+-----------------------------+--------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 3      |                     1 |
+| 5      |                     1 |
+| 7      |                     1 |
+| 8      |                    25 |
+| 13     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

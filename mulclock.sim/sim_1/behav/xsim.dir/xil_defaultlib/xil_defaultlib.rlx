@@ -1,0 +1,14 @@
+0.6
+2017.1
+Apr 14 2017
+19:10:27
+D:/SoutheastUniversity/mulclock_final/mulclock.sim/sim_1/behav/glbl.v,1492045073,verilog,,,,glbl,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sim_1/new/testbench.v,1535440353,verilog,,,,testbench,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v,1535617513,verilog,,,,clock,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/counter_sync_r.v,1535363485,verilog,,,,counter_sync_r,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/days_per_month.v,1535614693,verilog,,,,days_per_month,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/disp_dec.v,1535203670,verilog,,,,disp_dec,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/dual_hex.v,1535204544,verilog,,,,dual_hex,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v,1535252286,verilog,,,,int_div,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/myclock.v,1535614515,verilog,,,,myclock,,,,,,,,
+D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/seg_decoder.v,1535210543,verilog,,,,seg_decoder,,,,,,,,

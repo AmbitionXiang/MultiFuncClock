@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/clock.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/counter_sync_r.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/days_per_month.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/disp_dec.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/dual_hex.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/int_div.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/myclock.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sources_1/new/seg_decoder.v"
+verilog xil_defaultlib  "../../../mulclock.srcs/sim_1/new/testbench.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,470 @@
+
+*** Running vivado
+    with args -log clock.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source clock.tcl
+
+
+****** Vivado v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source clock.tcl -notrace
+Command: synth_design -top clock -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 353.953 ; gain = 88.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'clock' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:23]
+	Parameter STATE_WID bound to: 4 - type: integer 
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+	Parameter S11 bound to: 4'b1011 
+	Parameter S12 bound to: 4'b1100 
+	Parameter S13 bound to: 4'b1101 
+	Parameter S14 bound to: 4'b1110 
+	Parameter S15 bound to: 4'b1111 
+INFO: [Synth 8-638] synthesizing module 'int_div' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+	Parameter F_DIV bound to: 100000000 - type: integer 
+	Parameter F_DIV_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element count_n_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:42]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_r_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:68]
+INFO: [Synth 8-256] done synthesizing module 'int_div' (1#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'int_div__parameterized0' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+	Parameter F_DIV bound to: 50000000 - type: integer 
+	Parameter F_DIV_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element count_n_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:42]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_r_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:68]
+INFO: [Synth 8-256] done synthesizing module 'int_div__parameterized0' (1#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'int_div__parameterized1' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+	Parameter F_DIV bound to: 100000 - type: integer 
+	Parameter F_DIV_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element count_n_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:42]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_r_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:68]
+INFO: [Synth 8-256] done synthesizing module 'int_div__parameterized1' (1#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'int_div__parameterized2' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+	Parameter F_DIV bound to: 2 - type: integer 
+	Parameter F_DIV_WIDTH bound to: 32 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element count_n_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:42]
+WARNING: [Synth 8-6014] Unused sequential element clk_n_r_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:68]
+INFO: [Synth 8-256] done synthesizing module 'int_div__parameterized2' (1#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'myclock' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/myclock.v:23]
+INFO: [Synth 8-638] synthesizing module 'days_per_month' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/days_per_month.v:23]
+WARNING: [Synth 8-6014] Unused sequential element remainder_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/days_per_month.v:36]
+INFO: [Synth 8-256] done synthesizing module 'days_per_month' (2#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/days_per_month.v:23]
+INFO: [Synth 8-256] done synthesizing module 'myclock' (3#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/myclock.v:23]
+INFO: [Synth 8-638] synthesizing module 'disp_dec' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/disp_dec.v:23]
+INFO: [Synth 8-638] synthesizing module 'dual_hex' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/dual_hex.v:23]
+INFO: [Synth 8-638] synthesizing module 'seg_decoder' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/seg_decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'seg_decoder' (4#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/seg_decoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'dual_hex' (5#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/dual_hex.v:23]
+INFO: [Synth 8-256] done synthesizing module 'disp_dec' (6#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/disp_dec.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter_sync_r' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/counter_sync_r.v:23]
+INFO: [Synth 8-256] done synthesizing module 'counter_sync_r' (7#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/counter_sync_r.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock' (8#1) [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:23]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[7]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[6]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[5]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[4]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[3]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 416.008 ; gain = 150.566
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 416.008 ; gain = 150.566
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/clock_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/clock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 749.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 749.844 ; gain = 484.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 749.844 ; gain = 484.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 749.844 ; gain = 484.402
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+INFO: [Synth 8-5544] ROM "num" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_year" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_day" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_H" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_M" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'b1_reg' into 'g1_reg' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:375]
+INFO: [Synth 8-4471] merging register 'b2_reg' into 'g1_reg' [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:393]
+WARNING: [Synth 8-6014] Unused sequential element b1_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:375]
+WARNING: [Synth 8-6014] Unused sequential element b2_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/clock.v:393]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 749.844 ; gain = 484.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 26    
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 28    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 115   
+	  13 Input      8 Bit        Muxes := 2     
+	  15 Input      8 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 107   
+	  13 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 16    
+	  15 Input      1 Bit        Muxes := 14    
+	   7 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 29    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 20    
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 20    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 55    
+	  15 Input      8 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 8     
+	  16 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 87    
+	  15 Input      1 Bit        Muxes := 14    
+	   7 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 29    
+Module int_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module int_div__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module int_div__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module int_div__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module days_per_month 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  13 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module myclock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 6     
++---Registers : 
+	                8 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 18    
+Module seg_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module counter_sync_r 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element nclk50_000_000/clk_p_r_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:45]
+WARNING: [Synth 8-6014] Unused sequential element nclk50_000_000/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nclk1/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nclk2/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nclk1000/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+INFO: [Synth 8-5544] ROM "w/num" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "m_year" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "num" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element c/C0_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/counter_sync_r.v:33]
+WARNING: [Synth 8-6014] Unused sequential element nclk2/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nclk1000/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-6014] Unused sequential element nclk1/count_p_reg was removed.  [D:/SoutheastUniversity/mulclock_final/mulclock.srcs/sources_1/new/int_div.v:40]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[7]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[6]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[5]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[4]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[3]
+WARNING: [Synth 8-3331] design days_per_month has unconnected port year[2]
+INFO: [Synth 8-3886] merging instance 'w2/num_reg[6]' (FDE) to 'w2/num_reg[7]'
+INFO: [Synth 8-3886] merging instance 'w2/num_reg[7]' (FDE) to 'w2/num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'w2/num_reg[2]' (FDE) to 'w2/num_reg[4]'
+INFO: [Synth 8-3886] merging instance 'w2/num_reg[3]' (FDE) to 'w2/num_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (w2/\num_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (w2/\num_reg[5] )
+INFO: [Synth 8-3886] merging instance 'u1/w/num_reg[6]' (FDE) to 'u1/w/num_reg[7]'
+INFO: [Synth 8-3886] merging instance 'u1/w/num_reg[7]' (FDE) to 'u1/w/num_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u1/w/num_reg[2]' (FDE) to 'u1/w/num_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u1/w/num_reg[3]' (FDE) to 'u1/w/num_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u1/\w/num_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u1/\w/num_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (g1_reg)
+WARNING: [Synth 8-3332] Sequential element (w/num_reg[5]) is unused and will be removed from module myclock.
+WARNING: [Synth 8-3332] Sequential element (w/num_reg[4]) is unused and will be removed from module myclock.
+WARNING: [Synth 8-3332] Sequential element (num_reg[5]) is unused and will be removed from module days_per_month.
+WARNING: [Synth 8-3332] Sequential element (num_reg[4]) is unused and will be removed from module days_per_month.
+WARNING: [Synth 8-3332] Sequential element (g1_reg) is unused and will be removed from module clock.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (segP_reg)
+WARNING: [Synth 8-3332] Sequential element (segP_reg) is unused and will be removed from module clock.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 749.844 ; gain = 484.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 764.578 ; gain = 499.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 766.836 ; gain = 501.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (down_count_reg[7]) is unused and will be removed from module clock.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:12 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    99|
+|4     |LUT2   |    49|
+|5     |LUT3   |    36|
+|6     |LUT4   |   169|
+|7     |LUT5   |   178|
+|8     |LUT6   |   712|
+|9     |MUXF7  |    13|
+|10    |MUXF8  |     4|
+|11    |FDRE   |   340|
+|12    |FDSE   |     5|
+|13    |IBUF   |     7|
+|14    |OBUF   |    38|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+------------------------+------+
+|      |Instance   |Module                  |Cells |
++------+-----------+------------------------+------+
+|1     |top        |                        |  1677|
+|2     |  c        |counter_sync_r          |   230|
+|3     |  nclk1    |int_div                 |    96|
+|4     |  nclk1000 |int_div__parameterized1 |    89|
+|5     |  nclk2    |int_div__parameterized0 |    89|
+|6     |  u1       |myclock                 |   407|
+|7     |    w      |days_per_month_0        |    17|
+|8     |  w2       |days_per_month          |     9|
++------+-----------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 932.184 ; gain = 332.906
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 932.184 ; gain = 666.742
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+58 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:17 . Memory (MB): peak = 932.184 ; gain = 669.695
+INFO: [Common 17-1381] The checkpoint 'D:/SoutheastUniversity/mulclock_final/mulclock.runs/synth_1/clock.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 932.184 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  3 15:16:48 2018...
